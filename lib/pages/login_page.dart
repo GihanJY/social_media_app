@@ -3,10 +3,12 @@ import 'package:social_media_app/components/button.dart';
 import 'package:social_media_app/components/textfield.dart';
 
 class LoginPage extends StatelessWidget {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
-  LoginPage({super.key});
+  final void Function()? onTap;
+
+  LoginPage({super.key, required this.onTap});
 
   void login() {}
 
@@ -65,7 +67,7 @@ class LoginPage extends StatelessWidget {
 
               // Login button
               CustomButton(
-                onTap: login,
+                onTap: onTap,
                 text: "Login",
               ),
 

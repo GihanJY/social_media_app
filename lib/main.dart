@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_app/pages/login_page.dart';
 import 'package:social_media_app/theme/dark_mode.dart';
-import 'package:social_media_app/theme/light_mode.dart';
+//import 'package:social_media_app/theme/light_mode.dart';
 
 void main() {
   runApp(const MyApp());
